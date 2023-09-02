@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+void main () {
+
+//programa que converte Km/h para M/s ou vice-versa de acordo com a escolha do usuário,
+//e fecha o programa quando o usuário quiser
+
+float kmParaMs(float km){
+    return(km/3.6);
+};
+
+float MsParaKm(float ms){
+    return(ms*3.6);
+};
+
+int x;
+float km, ms;
+
+    for(x = 1 ; x != -1;){
+        printf("O que vc quer calcular?\n");
+        printf("Se vc quiser converter Km/h para M/s digite 1:\n");
+        printf("Se vc quiser converter M/s para K/h digite 2:\n");
+        printf("Se vc quer encerrar o programa, digite -1\n");
+
+    scanf("%d", &x);
+    if(x == 1){
+    printf("Qual o valor em km/h?\n");
+        scanf("%f",&km);
+    printf("Esse valor em m/s eh: %f\n", kmParaMs(km));
+
+    }else if(x == 2){
+    printf("Qual o valor em m/s:\n");
+        scanf("%f", &ms);
+    printf("Esse valor em km/h eh: %f\mn", MsParaKm(ms));
+
+    }
+
+    }
+printf("programa finalizado! :) ");
+
+}
