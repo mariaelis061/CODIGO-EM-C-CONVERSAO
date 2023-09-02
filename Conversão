@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-void main () {
-
 //programa que converte Km/h para M/s ou vice-versa de acordo com a escolha do usuário,
 //e fecha o programa quando o usuário quiser
 
@@ -13,6 +11,7 @@ float MsParaKm(float ms){
     return(ms*3.6);
 };
 
+void main () {
 int x;
 float km, ms;
 
